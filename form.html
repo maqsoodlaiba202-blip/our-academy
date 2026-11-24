@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6ff;
+            padding: 30px 15px;
+        }
+
+        fieldset {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border: none;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        legend {
+            background: #283c86;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        label {
+            color: #283c86;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #283c86;
+        }
+
+        button {
+            background: #283c86;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a247;
+        }
+
+        input[type="submit"] {
+            background: #45a247;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #283c86;
+        }
+    </style>
+</head>
+
+<body>
+
+<fieldset>
+<legend>Enquiry Form - Vision Academy</legend>
+
+<form method="" action="">
+
+<label>Name</label><br/>
+<input type="text" placeholder="Enter the Name" name="name"/>
+<br/><br/>
+
+<label>Email ID</label><br/>
+<input type="email" placeholder="Enter the Email" name="email"/>
+<br/><br/>
+
+<label>Password</label><br/>
+<input type="password" placeholder="Enter the Password" name="password"/>
+<br/><br/>
+
+<label>Phone</label><br/>
+<input type="tel" pattern="[0-9]{10}" placeholder="Enter the Phone" name="phone"/>
+<br/><br/>
+
+<label>Gender</label><br/>
+<input type="radio" value="Male" name="gender"/> Male
+<input type="radio" value="Female" name="gender"/> Female
+<br/><br/>
+
+<label>Course</label><br/>
+<input type="checkbox" value="English Language Course" name="course[]"/> English Language Course <br/>
+<input type="checkbox" value="Computer Course" name="course[]"/> Computer Course <br/>
+<input type="checkbox" value="Math & Science Tuition" name="course[]"/> Math & Science Tuition (Class 9th - 10th) <br/>
+<input type="checkbox" value="Chemistry" name="course[]"/> Chemistry (Class 9th - 10th) <br/>
+<input type="checkbox" value="Physics" name="course[]"/> Physics (Class 9th - 10th) <br/>
+<br/>
+
+<label>Message</label><br/>
+<textarea name="message" placeholder="Write your message"></textarea>
+<br/><br/>
+
+<label>Photo</label><br/>
+<input type="file" name="photo" accept="image/*"/>
+<br/><br/>
+
+<button type="submit">Save</button>
+<input type="submit" value="Go"/>
+
+</form>
+</fieldset>
+
+</body>
+</html>
